@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+welcome to the login sysytem
+
+helo {{name}}
+
+coonfirm your email account by clicking the link.
+
+link: http://{{domain}}{% url 'activate' uid64=uid token=token %}
+
+{% endautoescape %}
